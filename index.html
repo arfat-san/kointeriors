@@ -6,48 +6,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Add Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 <body class="bg-gray-100 m-0 p-0 ">
-  <section class="overflow-x-hidden">
-  <!-- Top Info Bar -->
-  <div class="bg-[#232323] text-[#e5e5e5] text-sm py-1 w-full">
-    <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
-      <div class="flex items-center space-x-4">
-        <span class="flex items-center space-x-1">
-          <svg class="w-4 h-4 text-[#b3a692]" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2C6.13 2 3 5.13 3 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 10 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
-          <span>Mumbai, Maharashtra, India</span>
-        </span>
-        <span class="flex items-center space-x-1">
-          <svg class="w-4 h-4 text-[#b3a692]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92V19a2 2 0 0 1-2 2A19.72 19.72 0 0 1 3 5a2 2 0 0 1 2-2h2.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 22 16.92z"/></svg>
-          <span>+91 98765 43210</span>
-        </span>
+  <!-- Info Bar (above navbar) -->
+  <div class="bg-[#232323] text-sm border-b border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 py-1.5">
+      <!-- Desktop: row, Mobile: stacked -->
+      <div class="hidden md:flex flex-row justify-between items-center w-full">
+        <!-- Left: Location -->
+        <div class="flex items-center space-x-2 text-[#a1845c]">
+          <i class="fa-solid fa-location-dot text-lg"></i>
+          <span class="text-white">Mumbai, Maharashtra, India</span>
+        </div>
+        <!-- Right: Phone -->
+        <div class="flex items-center space-x-2 text-[#a1845c]">
+          <i class="fa-solid fa-phone text-lg"></i>
+          <span class="text-white">+91 98765 43210</span>
+        </div>
+        <!-- Center: Timing (desktop) -->
+        <div class="flex items-center space-x-2 text-[#a1845c]">
+          <i class="fa-regular fa-clock text-lg"></i>
+          <span class="text-white">Mon-Sat 09.00 - 18.00</span>
+        </div>
       </div>
-      <div class="flex items-center space-x-1">
-        <svg class="w-4 h-4 text-[#b3a692]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-        <span>Opening : Mon-Sat 09.00 - 18.00</span>
+      <div class="md:hidden flex flex-col w-full">
+        <div class="flex flex-row justify-between items-center w-full">
+          <!-- Left: Location -->
+          <div class="flex items-center space-x-2 text-[#a1845c]">
+            <i class="fa-solid fa-location-dot text-lg"></i>
+            <span class="text-white">Mumbai, Maharashtra, India</span>
+          </div>
+          <!-- Right: Phone -->
+          <div class="flex items-center space-x-2 text-[#a1845c]">
+            <i class="fa-solid fa-phone text-lg"></i>
+            <span class="text-white">+91 98765 43210</span>
+          </div>
+        </div>
+        <div class="flex justify-center mt-1">
+          <div class="flex items-center space-x-2 text-[#a1845c]">
+            <i class="fa-regular fa-clock text-lg"></i>
+            <span class="text-white">Mon-Sat 09.00 - 18.00</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
   <!-- Main Navbar -->
   <header class="bg-[#232323] w-full border-b border-[#353535]">
-    <div class="max-w-7xl mx-auto flex items-left justify-between px-7 py-7 relative">
-      <!-- Logo -->
-      <a href="#" class="flex items-center z-30 space-x-8 md:space-x-3">
-        <img src="logo.webp" alt="K Logo" class="h-14 md:h-16 w-auto" style="min-width:56px;" />
-        <img src="logo-extend.webp" alt="Komal Sachdev Designer & Planner Logo" class="h-10 md:h-12 w-auto" style="min-width:300px;" />
-      </a>
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex flex-1 justify-center items-center space-x-5">
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">HOME</a>
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">ABOUT</a>
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">SERVICES</a>
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">PROJECTS</a>
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">PROCESS</a>
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">TESTIMONIALS</a>
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">CONTACT</a>
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-7 py-4 relative">
+      <!-- Logo (left) -->
+      <div class="flex items-center space-x-4">
+        <img src="logo.webp" alt="K Logo" class="h-8 w-auto min-w-[32px] md:h-10" />
+        <img src="logo-extend.webp" alt="Komal Sachdev Designer & Planner Logo" class="h-6 w-auto min-w-[120px] md:h-8" />
+      </div>
+      <!-- Desktop Nav (center/right) -->
+      <nav class="hidden md:flex items-center space-x-6 ml-8 flex-1 justify-end">
+        <a href="#" class="text-white font-bold text-base tracking-wide hover:text-[#b3a692] transition">HOME</a>
+        <a href="#" class="text-white font-bold text-base tracking-wide hover:text-[#b3a692] transition">ABOUT</a>
+        <a href="#" class="text-white font-bold text-base tracking-wide hover:text-[#b3a692] transition">SERVICES</a>
+        <a href="#" class="text-white font-bold text-base tracking-wide hover:text-[#b3a692] transition">PROJECTS</a>
+        <a href="#" class="text-white font-bold text-base tracking-wide hover:text-[#b3a692] transition">PROCESS</a>
+        <a href="#" class="text-white font-bold text-base tracking-wide hover:text-[#b3a692] transition">TESTIMONIALS</a>
+        <a href="#" class="text-white font-bold text-base tracking-wide hover:text-[#b3a692] transition">CONTACT</a>
       </nav>
-      <!-- Hamburger Icon for Mobile -->
-      <button id="mobile-menu-button" class="md:hidden flex items-center px-2 py-2 text-white focus:outline-none z-20">
+      <!-- Hamburger Icon for Mobile (right) -->
+      <button id="mobile-menu-button" class="md:hidden flex items-center px-2 py-2 text-white focus:outline-none z-20 ml-2">
         <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -87,7 +113,7 @@
   </header>
 
   <!-- Hero Section with background image -->
-  <div class="w-full h-screen pt-28" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-position: center;">
+  <div class="w-full h-screen pt-28 bg-cover bg-center md:bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80')] bg-[url('bg_img.png')] md:bg-cover md:bg-center min-h-[60vh]" style="background-image: url('bg_img.png'); background-size: cover; background-position: center;">
     <!-- Optionally, add overlay or content here -->
   </div>
 
@@ -102,7 +128,7 @@
       </div>
       <!-- Right: Image -->
       <div class="md:w-1/2 w-full flex justify-center">
-        <img src="https://images.unsplash.com/photo-1503389152951-9c3d8bca6c63?auto=format&fit=crop&w=700&q=80" alt="Interior Design" class="rounded-lg shadow-lg w-full max-w-md object-cover" />
+        <img src="recent_1.webp" alt="Interior Design" class="rounded-lg shadow-lg w-full max-w-md object-cover" />
       </div>
     </div>
 
