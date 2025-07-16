@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <title>Portfolio | Komal Sachdev Designer & Planner</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Add Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -14,26 +17,66 @@
   </style>
 </head>
 <body class="bg-white text-[#232b3b]">
-  <!-- Header -->
+  <!-- Info Bar (above navbar) -->
+  <div class="bg-[#232323] text-sm border-b border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 py-1.5">
+      <!-- Desktop: row, Mobile: stacked -->
+      <div class="hidden md:flex flex-row justify-between items-center w-full">
+        <!-- Left: Location -->
+        <div class="flex items-center space-x-2 text-[#a1845c]">
+          <i class="fa-solid fa-location-dot text-lg"></i>
+          <span class="text-white">Mumbai, Maharashtra, India</span>
+        </div>
+        <!-- Right: Phone -->
+        <div class="flex items-center space-x-2 text-[#a1845c]">
+          <i class="fa-solid fa-phone text-lg"></i>
+          <span class="text-white">+91 98765 43210</span>
+        </div>
+        <!-- Center: Timing (desktop) -->
+        <div class="flex items-center space-x-2 text-[#a1845c]">
+          <i class="fa-regular fa-clock text-lg"></i>
+          <span class="text-white">Mon-Sat 09.00 - 18.00</span>
+        </div>
+      </div>
+      <div class="md:hidden flex flex-col w-full">
+        <div class="flex flex-row justify-between items-center w-full">
+          <!-- Left: Location -->
+          <div class="flex items-center space-x-2 text-[#a1845c]">
+            <i class="fa-solid fa-location-dot text-lg"></i>
+            <span class="text-white">Mumbai, Maharashtra, India</span>
+          </div>
+          <!-- Right: Phone -->
+          <div class="flex items-center space-x-2 text-[#a1845c]">
+            <i class="fa-solid fa-phone text-lg"></i>
+            <span class="text-white">+91 98765 43210</span>
+          </div>
+        </div>
+        <div class="flex justify-center mt-1">
+          <div class="flex items-center space-x-2 text-[#a1845c]">
+            <i class="fa-regular fa-clock text-lg"></i>
+            <span class="text-white">Mon-Sat 09.00 - 18.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main Navbar -->
   <header class="bg-[#232323] w-full border-b border-[#353535]">
-    <div class="max-w-7xl mx-auto flex items-left justify-between px-7 py-7 relative">
-      <!-- Logo -->
-      <a href="#" class="flex items-center z-30 space-x-8 md:space-x-3">
-        <img src="logo.webp" alt="K Logo" class="h-14 md:h-16 w-auto" style="min-width:56px;" />
-        <img src="logo-extend.webp" alt="Komal Sachdev Designer & Planner Logo" class="h-10 md:h-12 w-auto" style="min-width:300px;" />
-      </a>
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex flex-1 justify-center items-center space-x-5">
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">HOME</a>
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">ABOUT</a>
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">SERVICES</a>
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">PROJECTS</a>
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">PROCESS</a>
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">TESTIMONIALS</a>
-        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">CONTACT</a>
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-7 py-4 relative">
+      <!-- Logo (left) -->
+      <div class="flex items-center space-x-4">
+        <img src="logo.webp" alt="K Logo" class="h-8 w-auto min-w-[32px] md:h-10" />
+        <img src="logo-extend.webp" alt="Komal Sachdev Designer & Planner Logo" class="h-6 w-auto min-w-[120px] md:h-8" />
+      </div>
+      <!-- Desktop Nav (center/right) -->
+      <nav class="hidden md:flex items-center space-x-6 ml-8 flex-1 justify-end">
+        <a href="index.html" class="text-white font-bold text-base tracking-wide hover:text-[#b3a692] transition">HOME</a>
+        <a href="aboutus.html" class="text-white font-bold text-base tracking-wide hover:text-[#b3a692] transition">ABOUT</a>
+        <a href="portfolio.html" class="text-white font-bold text-base tracking-wide hover:text-[#b3a692] transition">PROJECTS</a>
+        <a href="#" class="text-white font-bold text-base tracking-wide hover:text-[#b3a692] transition">CONTACT</a>
       </nav>
-      <!-- Hamburger Icon for Mobile -->
-      <button id="mobile-menu-button" class="md:hidden flex items-center px-2 py-2 text-white focus:outline-none z-20">
+      <!-- Hamburger Icon for Mobile (right) -->
+      <button id="mobile-menu-button" class="md:hidden flex items-center px-2 py-2 text-white focus:outline-none z-20 ml-2">
         <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -45,12 +88,9 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">HOME</a>
-        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">ABOUT</a>
-        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">SERVICES</a>
-        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">PROJECTS</a>
-        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">PROCESS</a>
-        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">TESTIMONIALS</a>
+        <a href="index.html" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">HOME</a>
+        <a href="aboutus.html" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">ABOUT</a>
+        <a href="portfolio.html" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">PROJECTS</a>
         <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">CONTACT</a>
       </div>
     </div>
@@ -73,31 +113,31 @@
   </header>
 
   <!-- Portfolio Title & Subtitle -->
-  <section class="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between py-16 px-4">
+  <section class="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between py-8 md:py-16 px-2 md:px-4">
     <div class="md:w-1/2 w-full mb-8 md:mb-0">
-      <h1 class="text-4xl md:text-5xl font-serif font-bold tracking-tight text-left">Some of our top Projects</h1>
+      <h1 class="text-2xl sm:text-3xl md:text-5xl font-serif font-bold tracking-tight text-left mb-2 md:mb-0">Some of our top Projects</h1>
     </div>
     <div class="md:w-1/2 w-full flex items-center justify-end">
-      <p class="text-lg text-[#232b3b] text-right max-w-md">Whether you savor the rich aroma of coffee or lose yourself in the pages of a book, we design spaces that reflect your unique personality.</p>
+      <p class="text-base md:text-lg text-[#232b3b] text-right max-w-md">Whether you savor the rich aroma of coffee or lose yourself in the pages of a book, we design spaces that reflect your unique personality.</p>
     </div>
   </section>
 
   <!-- Filter Buttons -->
-  <div class="flex justify-center gap-4 mb-10">
-    <button class="px-6 py-2 border border-[#b3a692] text-[#232b3b] font-semibold rounded-full bg-[#f7f6f3] hover:bg-[#b3a692] hover:text-white transition">All</button>
-    <button class="px-6 py-2 border border-[#b3a692] text-[#232b3b] font-semibold rounded-full bg-[#f7f6f3] hover:bg-[#b3a692] hover:text-white transition">Residential</button>
-    <button class="px-6 py-2 border border-[#b3a692] text-[#232b3b] font-semibold rounded-full bg-[#f7f6f3] hover:bg-[#b3a692] hover:text-white transition">Commercial</button>
-    <button class="px-6 py-2 border border-[#b3a692] text-[#232b3b] font-semibold rounded-full bg-[#f7f6f3] hover:bg-[#b3a692] hover:text-white transition">Show Flat</button>
+  <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-10 px-2">
+    <button class="px-4 md:px-6 py-2 border border-[#b3a692] text-[#232b3b] font-semibold rounded-full bg-[#f7f6f3] hover:bg-[#b3a692] hover:text-white transition">All</button>
+    <button class="px-4 md:px-6 py-2 border border-[#b3a692] text-[#232b3b] font-semibold rounded-full bg-[#f7f6f3] hover:bg-[#b3a692] hover:text-white transition">Residential</button>
+    <button class="px-4 md:px-6 py-2 border border-[#b3a692] text-[#232b3b] font-semibold rounded-full bg-[#f7f6f3] hover:bg-[#b3a692] hover:text-white transition">Commercial</button>
+    <button class="px-4 md:px-6 py-2 border border-[#b3a692] text-[#232b3b] font-semibold rounded-full bg-[#f7f6f3] hover:bg-[#b3a692] hover:text-white transition">Show Flat</button>
   </div>
 
   <!-- Projects Grid -->
-  <section class="max-w-7xl mx-auto px-4 pb-20">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-y-16 gap-x-8">
+  <section class="max-w-7xl mx-auto px-2 md:px-4 pb-10 md:pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 md:gap-y-16 gap-x-4 md:gap-x-8">
       <!-- Project Card 1: House of Arches -->
-      <div class="flex flex-col items-center">
-        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/2023-10-KSdesign-MW-254-edit-%C2%A9-Pulkit-Sehgal-1.jpg" alt="House of Arches" class="w-full md:w-[720px] h-[480px] object-cover mb-6">
-        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">House of Arches</h2>
-        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Thane</div>
+      <div class="flex flex-col items-center mb-6 md:mb-0">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/2023-10-KSdesign-MW-254-edit-%C2%A9-Pulkit-Sehgal-1.jpg" alt="House of Arches" class="w-full h-48 md:w-[720px] md:h-[480px] object-cover mb-4 md:mb-6 rounded-lg shadow-sm">
+        <h2 class="text-xl md:text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-1 md:mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">House of Arches</h2>
+        <div class="text-[#232b3b] text-base md:text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Thane</div>
       </div>
       <!-- Project Card 2: Amoda Reserve -->
       <div class="flex flex-col items-center">
@@ -186,20 +226,17 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer class="bg-[#232323] py-10 mt-0">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start px-4">
       <!-- Left: Logo and Copyright -->
       <div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
         <div class="flex items-center mb-2">
-          <!-- Logo (text-based for now) -->
-          <span class="text-white text-6xl font-light leading-none mr-4" style="font-family:serif;">ks</span>
-          <div>
-            <div class="text-white text-2xl font-semibold">KOMAL SACHDEV</div>
-            <div class="text-white text-base tracking-wider">DESIGNER + PLANNER</div>
-          </div>
+          <img src="logo.webp" alt="K Logo" class="h-10 w-auto min-w-[32px] mr-4" />
+          <img src="logo-extend.webp" alt="K Logo" class="h-10 w-auto min-w-[32px] mr-4" />
+          <span class="text-white text-6xl font-light leading-none mr-4" style="font-family:serif;"></span>
         </div>
-        <div class="text-[#d1c7b7] text-sm italic mt-4">Copyright © 2024 KSDP &amp; Developed with <span class="text-[#b3a692]">&#10084;</span> by PerceptKraft.</div>
+        <div class="text-[#d1c7b7] text-sm italic mt-4">Copyright © 2024 KSDP &amp; Developed with <span class="text-[#b3a692]">&#10084;</span> by Nex2Link.</div>
       </div>
       <!-- Right: Social Links -->
       <div class="flex flex-col items-center md:items-end">
