@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Komal Sachdev Designer & Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+    .font-serif { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-white text-[#232b3b]">
+  <!-- Header -->
+  <header class="bg-[#232323] w-full border-b border-[#353535]">
+    <div class="max-w-7xl mx-auto flex items-left justify-between px-7 py-7 relative">
+      <!-- Logo -->
+      <a href="#" class="flex items-center z-30 space-x-8 md:space-x-3">
+        <img src="logo.webp" alt="K Logo" class="h-14 md:h-16 w-auto" style="min-width:56px;" />
+        <img src="logo-extend.webp" alt="Komal Sachdev Designer & Planner Logo" class="h-10 md:h-12 w-auto" style="min-width:300px;" />
+      </a>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex flex-1 justify-center items-center space-x-5">
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">HOME</a>
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">ABOUT</a>
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">SERVICES</a>
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">PROJECTS</a>
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">PROCESS</a>
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">TESTIMONIALS</a>
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">CONTACT</a>
+      </nav>
+      <!-- Hamburger Icon for Mobile -->
+      <button id="mobile-menu-button" class="md:hidden flex items-center px-2 py-2 text-white focus:outline-none z-20">
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <!-- Mobile Nav -->
+      <div id="mobile-menu" class="fixed inset-0 bg-[#232323] bg-opacity-95 z-30 flex flex-col items-center justify-center space-y-8 text-center transition-all duration-300 opacity-0 pointer-events-none md:hidden">
+        <button id="close-mobile-menu" class="absolute top-6 right-6 text-white">
+          <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">HOME</a>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">ABOUT</a>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">SERVICES</a>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">PROJECTS</a>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">PROCESS</a>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">TESTIMONIALS</a>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">CONTACT</a>
+      </div>
+    </div>
+    <script>
+      // Mobile menu toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('close-mobile-menu');
+        menuBtn.addEventListener('click', () => {
+          menu.classList.remove('opacity-0', 'pointer-events-none');
+          menu.classList.add('opacity-100');
+        });
+        closeBtn.addEventListener('click', () => {
+          menu.classList.add('opacity-0', 'pointer-events-none');
+          menu.classList.remove('opacity-100');
+        });
+      });
+    </script>
+  </header>
+
+  <!-- Portfolio Title & Subtitle -->
+  <section class="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between py-16 px-4">
+    <div class="md:w-1/2 w-full mb-8 md:mb-0">
+      <h1 class="text-4xl md:text-5xl font-serif font-bold tracking-tight text-left">Some of our top Projects</h1>
+    </div>
+    <div class="md:w-1/2 w-full flex items-center justify-end">
+      <p class="text-lg text-[#232b3b] text-right max-w-md">Whether you savor the rich aroma of coffee or lose yourself in the pages of a book, we design spaces that reflect your unique personality.</p>
+    </div>
+  </section>
+
+  <!-- Filter Buttons -->
+  <div class="flex justify-center gap-4 mb-10">
+    <button class="px-6 py-2 border border-[#b3a692] text-[#232b3b] font-semibold rounded-full bg-[#f7f6f3] hover:bg-[#b3a692] hover:text-white transition">All</button>
+    <button class="px-6 py-2 border border-[#b3a692] text-[#232b3b] font-semibold rounded-full bg-[#f7f6f3] hover:bg-[#b3a692] hover:text-white transition">Residential</button>
+    <button class="px-6 py-2 border border-[#b3a692] text-[#232b3b] font-semibold rounded-full bg-[#f7f6f3] hover:bg-[#b3a692] hover:text-white transition">Commercial</button>
+    <button class="px-6 py-2 border border-[#b3a692] text-[#232b3b] font-semibold rounded-full bg-[#f7f6f3] hover:bg-[#b3a692] hover:text-white transition">Show Flat</button>
+  </div>
+
+  <!-- Projects Grid -->
+  <section class="max-w-7xl mx-auto px-4 pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-y-16 gap-x-8">
+      <!-- Project Card 1: House of Arches -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/2023-10-KSdesign-MW-254-edit-%C2%A9-Pulkit-Sehgal-1.jpg" alt="House of Arches" class="w-full md:w-[720px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">House of Arches</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Thane</div>
+      </div>
+      <!-- Project Card 2: Amoda Reserve -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/sb-instagram-feed-images/454951685_18249371818267284_5712219744732075326_nlow.webp" alt="Amoda Reserve" class="w-full md:w-[720px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">Amoda Reserve</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Lonavala</div>
+      </div>
+      <!-- Project Card 3: Maison De Luxe -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/EPHX_3328_FS.jpg" alt="Maison De Luxe" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">Maison De Luxe</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Mumbai</div>
+      </div>
+      <!-- Project Card 4: The Next Biography -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/E_PHX9419LR.jpg" alt="The Next Biography" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">The Next Biography</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Mumbai</div>
+      </div>
+      <!-- Project Card 5: Timeless -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/PHOTO-2023-10-27-13-13-30.jpg" alt="Timeless" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">Timeless</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Navi Mumbai</div>
+      </div>
+      <!-- Project Card 6: The Plush -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/E_PHX0161-EditLR.jpg" alt="The Plush" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">The Plush</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Navi Mumbai</div>
+      </div>
+      <!-- Project Card 7: Black Elegance -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/E_PHX7863.jpg" alt="Black Elegance" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">Black Elegance</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Navi Mumbai</div>
+      </div>
+      <!-- Project Card 8: Mode De Vie -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/IMG_2438.jpg" alt="Mode De Vie" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">Mode De Vie</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Mumbai</div>
+      </div>
+      <!-- Project Card 9: Maatr Group Office -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/PHOTO-2023-10-27-13-13-30.jpg" alt="Maatr Group Office" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">Maatr Group Office</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Thane</div>
+      </div>
+      <!-- Project Card 10: Metro Centonic -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/IMG-20240521-WA0019.jpg" alt="Metro Centonic" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">Metro Centonic</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Navi Mumbai</div>
+      </div>
+      <!-- Project Card 11: Tharwani HQ -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/PHOTO-2023-10-19-16-25-52.jpg" alt="Tharwani HQ" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">Tharwani HQ</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Thane</div>
+      </div>
+      <!-- Project Card 12: Scarlett Studio -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/PHX3912_FS.jpg" alt="Scarlett Studio" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">Scarlett Studio</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Navi Mumbai</div>
+      </div>
+      <!-- Project Card 13: The Frontier Post -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/E_PHX0384_FS.jpg" alt="The Frontier Post" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">The Frontier Post</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Navi Mumbai</div>
+      </div>
+      <!-- Project Card 14: Wabi Sabi -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/E_PHX3427_FS.jpg" alt="Wabi Sabi" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">Wabi Sabi</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Thane</div>
+      </div>
+      <!-- Project Card 15: Tharwani Majestic -->
+      <div class="flex flex-col items-center">
+        <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/2024/08/IMG_2438.jpg" alt="Tharwani Majestic" class="w-full md:w-[640px] h-[480px] object-cover mb-6">
+        <h2 class="text-3xl font-serif font-semibold text-[#8B7B63] text-center tracking-wide mb-2" style="font-family: 'Playfair Display', serif; letter-spacing: 0.04em;">Tharwani Majestic</h2>
+        <div class="text-[#232b3b] text-xl font-normal text-center" style="font-family: 'Montserrat', sans-serif;">Thane</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#232323] py-10 mt-0">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start px-4">
+      <!-- Left: Logo and Copyright -->
+      <div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
+        <div class="flex items-center mb-2">
+          <!-- Logo (text-based for now) -->
+          <span class="text-white text-6xl font-light leading-none mr-4" style="font-family:serif;">ks</span>
+          <div>
+            <div class="text-white text-2xl font-semibold">KOMAL SACHDEV</div>
+            <div class="text-white text-base tracking-wider">DESIGNER + PLANNER</div>
+          </div>
+        </div>
+        <div class="text-[#d1c7b7] text-sm italic mt-4">Copyright © 2024 KSDP &amp; Developed with <span class="text-[#b3a692]">&#10084;</span> by PerceptKraft.</div>
+      </div>
+      <!-- Right: Social Links -->
+      <div class="flex flex-col items-center md:items-end">
+        <div class="text-white text-2xl font-serif mb-4">Follow Us On</div>
+        <div class="flex space-x-6">
+          <!-- Instagram -->
+          <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full border border-[#d1c7b7] text-white hover:bg-[#b3a692] transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="6"/><circle cx="12" cy="12" r="5"/><circle cx="17" cy="7" r="1.5"/></svg>
+          </a>
+          <!-- Facebook -->
+          <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full border border-[#d1c7b7] text-white hover:bg-[#b3a692] transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17 2.1A2.1 2.1 0 0 1 19.1 4.2v15.6A2.1 2.1 0 0 1 17 21.9H7A2.1 2.1 0 0 1 4.9 19.8V4.2A2.1 2.1 0 0 1 7 2.1h10zm-2.5 4.2h-1.4c-.6 0-.7.3-.7.7v1.4h2.1l-.3 2.1h-1.8v5.6h-2.1v-5.6H8.6V8.4h1.1V7.5c0-1.2.7-2.1 2.1-2.1h1.4v2.1z"/></svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full border border-[#d1c7b7] text-white hover:bg-[#b3a692] transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.3c-1 0-1.7-.8-1.7-1.7s.8-1.7 1.7-1.7 1.7.8 1.7 1.7-.8 1.7-1.7 1.7zm15.5 10.3h-3v-4.5c0-1.1-.4-1.8-1.3-1.8-.7 0-1.1.5-1.3 1-.1.2-.1.5-.1.8v4.5h-3v-9h3v1.2c.4-.6 1.1-1.5 2.7-1.5 2 0 3.5 1.3 3.5 4.1v5.2z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

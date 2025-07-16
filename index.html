@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Komal Sachdev Interiors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 m-0 p-0 ">
+  <section class="overflow-x-hidden">
+  <!-- Top Info Bar -->
+  <div class="bg-[#232323] text-[#e5e5e5] text-sm py-1 w-full">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center space-x-1">
+          <svg class="w-4 h-4 text-[#b3a692]" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2C6.13 2 3 5.13 3 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 10 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+          <span>Mumbai, Maharashtra, India</span>
+        </span>
+        <span class="flex items-center space-x-1">
+          <svg class="w-4 h-4 text-[#b3a692]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92V19a2 2 0 0 1-2 2A19.72 19.72 0 0 1 3 5a2 2 0 0 1 2-2h2.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+91 98765 43210</span>
+        </span>
+      </div>
+      <div class="flex items-center space-x-1">
+        <svg class="w-4 h-4 text-[#b3a692]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <span>Opening : Mon-Sat 09.00 - 18.00</span>
+      </div>
+    </div>
+  </div>
+  <!-- Main Navbar -->
+  <header class="bg-[#232323] w-full border-b border-[#353535]">
+    <div class="max-w-7xl mx-auto flex items-left justify-between px-7 py-7 relative">
+      <!-- Logo -->
+      <a href="#" class="flex items-center z-30 space-x-8 md:space-x-3">
+        <img src="logo.webp" alt="K Logo" class="h-14 md:h-16 w-auto" style="min-width:56px;" />
+        <img src="logo-extend.webp" alt="Komal Sachdev Designer & Planner Logo" class="h-10 md:h-12 w-auto" style="min-width:300px;" />
+      </a>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex flex-1 justify-center items-center space-x-5">
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">HOME</a>
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">ABOUT</a>
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">SERVICES</a>
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">PROJECTS</a>
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">PROCESS</a>
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">TESTIMONIALS</a>
+        <a href="#" class="text-white font-bold text-lg tracking-wide hover:text-[#b3a692] transition">CONTACT</a>
+      </nav>
+      <!-- Hamburger Icon for Mobile -->
+      <button id="mobile-menu-button" class="md:hidden flex items-center px-2 py-2 text-white focus:outline-none z-20">
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <!-- Mobile Nav -->
+      <div id="mobile-menu" class="fixed inset-0 bg-[#232323] bg-opacity-95 z-30 flex flex-col items-center justify-center space-y-8 text-center transition-all duration-300 opacity-0 pointer-events-none md:hidden">
+        <button id="close-mobile-menu" class="absolute top-6 right-6 text-white">
+          <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">HOME</a>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">ABOUT</a>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">SERVICES</a>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">PROJECTS</a>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">PROCESS</a>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">TESTIMONIALS</a>
+        <a href="#" class="text-white font-bold text-2xl tracking-wide hover:text-[#b3a692] transition">CONTACT</a>
+      </div>
+    </div>
+    <script>
+      // Mobile menu toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('close-mobile-menu');
+        menuBtn.addEventListener('click', () => {
+          menu.classList.remove('opacity-0', 'pointer-events-none');
+          menu.classList.add('opacity-100');
+        });
+        closeBtn.addEventListener('click', () => {
+          menu.classList.add('opacity-0', 'pointer-events-none');
+          menu.classList.remove('opacity-100');
+        });
+      });
+    </script>
+  </header>
+
+  <!-- Hero Section with background image -->
+  <div class="w-full h-screen pt-28" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-position: center;">
+    <!-- Optionally, add overlay or content here -->
+  </div>
+
+  <!-- New Section: Transforming Spaces & Our Process -->
+  <section class="max-w-7xl mx-auto px-4 py-20">
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-12">
+      <!-- Left: Text -->
+      <div class="md:w-1/2 w-full">
+        <h2 class="text-4xl md:text-5xl font-serif italic text-[#232b3b] font-medium mb-2">Transforming Spaces</h2>
+        <h3 class="text-3xl md:text-4xl text-[#232b3b] font-normal mb-4">with Innovation</h3>
+        <p class="text-lg text-gray-700 leading-relaxed">Every project is an opportunity to inspire and innovate. We specialize in crafting exquisite residential and office spaces that reflect our clients' unique personalities. From stunning interiors to bespoke home and offices, we bring a touch of innovation and elegance to every project.</p>
+      </div>
+      <!-- Right: Image -->
+      <div class="md:w-1/2 w-full flex justify-center">
+        <img src="https://images.unsplash.com/photo-1503389152951-9c3d8bca6c63?auto=format&fit=crop&w=700&q=80" alt="Interior Design" class="rounded-lg shadow-lg w-full max-w-md object-cover" />
+      </div>
+    </div>
+
+    <!-- Our Process Section -->
+    <div class="mt-20 flex flex-col items-center">
+      <div class="flex items-center w-full mb-12">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <span class="mx-6 text-3xl font-serif text-[#232b3b] tracking-wide">Our Process</span>
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 w-full">
+        <!-- Step 1 -->
+        <div>
+          <div class="text-2xl text-gray-300 font-bold mb-2">01</div>
+          <h4 class="text-lg font-serif font-semibold text-[#232b3b] mb-2 uppercase">Consultation & Concept Development</h4>
+          <p class="text-gray-600 text-base">Conduct a thorough space assessment and gather inspiration. Develop a customised design concept and mood board tailored to your lifestyle and budget.</p>
+        </div>
+        <!-- Step 2 -->
+        <div>
+          <div class="text-2xl text-gray-300 font-bold mb-2">02</div>
+          <h4 class="text-lg font-serif font-semibold text-[#232b3b] mb-2 uppercase">Design & Planning</h4>
+          <p class="text-gray-600 text-base">Create detailed design plans, including layout, color schemes, and materials. Plan a timeline of the project along with an action-plan for a linear approach.</p>
+        </div>
+        <!-- Step 3 -->
+        <div>
+          <div class="text-2xl text-gray-300 font-bold mb-2">03</div>
+          <h4 class="text-lg font-serif font-semibold text-[#232b3b] mb-2 uppercase">Execution</h4>
+          <p class="text-gray-600 text-base">Transforming design plans into tangible results. Styling, on the other hand, focuses on enhancing the space with carefully chosen artifacts and decor elements to achieve the desired aesthetic and ambiance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Services Section -->
+  <section class="w-full py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center w-full mb-12">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <span class="mx-6 text-3xl font-serif text-[#232b3b] tracking-wide">Our Services</span>
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 text-center">
+        <!-- Design & Planning -->
+        <div class="flex flex-col items-center">
+          <svg width="80" height="80" fill="none" stroke="#7a7262" stroke-width="2" viewBox="0 0 48 48" class="mb-4"><rect x="6" y="6" width="36" height="36" rx="2"/><path d="M6 18h36M18 6v36M30 6v36M6 30h36M12 12l6 6M36 36l-6-6"/><circle cx="12" cy="12" r="1.5"/><circle cx="36" cy="36" r="1.5"/><circle cx="24" cy="24" r="1.5"/></svg>
+          <span class="mt-2 text-xl text-[#232b3b] font-normal font-sans">Design & Planning</span>
+        </div>
+        <!-- Sourcing -->
+        <div class="flex flex-col items-center">
+          <svg width="80" height="80" fill="none" stroke="#7a7262" stroke-width="2" viewBox="0 0 48 48" class="mb-4"><rect x="10" y="18" width="28" height="18" rx="6"/><rect x="14" y="12" width="20" height="10" rx="5"/><path d="M14 36v4M34 36v4"/></svg>
+          <span class="mt-2 text-xl text-[#232b3b] font-normal font-sans">Sourcing</span>
+        </div>
+        <!-- Styling -->
+        <div class="flex flex-col items-center">
+          <svg width="80" height="80" fill="none" stroke="#7a7262" stroke-width="3" viewBox="0 0 48 48" class="mb-4"><rect x="20" y="32" width="16" height="4" rx="1"/><rect x="12" y="36" width="8" height="4" rx="1"/></svg>
+          <span class="mt-2 text-xl text-[#232b3b] font-normal font-sans">Styling</span>
+        </div>
+        <!-- Consultation -->
+        <div class="flex flex-col items-center">
+          <svg width="80" height="80" fill="none" stroke="#7a7262" stroke-width="2" viewBox="0 0 48 48" class="mb-4"><path d="M24 8a10 10 0 0 1 10 10c0 4.5-3.5 8.5-7 12v4a3 3 0 1 1-6 0v-4c-3.5-3.5-7-7.5-7-12A10 10 0 0 1 24 8Z"/><circle cx="24" cy="38" r="2"/></svg>
+          <span class="mt-2 text-xl text-[#232b3b] font-normal font-sans">Consultation</span>
+        </div>
+        <!-- Art-Curation -->
+        <div class="flex flex-col items-center">
+          <svg width="80" height="80" fill="none" stroke="#7a7262" stroke-width="2" viewBox="0 0 48 48" class="mb-4"><rect x="10" y="10" width="28" height="28" rx="2"/><path d="M14 14h20v20H14z"/><path d="M18 18c2 2 6 2 8 0s6 2 8 0"/><circle cx="18" cy="18" r="1.5"/><circle cx="30" cy="30" r="1.5"/></svg>
+          <span class="mt-2 text-xl text-[#232b3b] font-normal font-sans">Art-Curation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vertical Carousel Section (pixel-perfect match to reference) -->
+  <section class="flex justify-center items-center min-h-screen bg-white py-10 px-4 relative">
+    <!-- Desktop Carousel & Content -->
+    <div class="hidden md:flex w-full max-w-7xl mx-auto gap-8">
+      <!-- Left: Vertical Carousel -->
+      <div class="relative w-1/2 h-[600px] md:h-[750px] flex items-center">
+        <div class="swiper mySwiper h-full w-full">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="1r1.PNG" alt="Residential" class="object-cover h-full w-full" />
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="c1.PNG" alt="Commercial" class="object-cover h-full w-full" />
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="sf1 copy.PNG" alt="Showflat" class="object-cover h-full w-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right: Text Content that syncs with slide -->
+      <div class="w-1/2 flex flex-col justify-center h-[600px] md:h-[750px]">
+        <div id="text-content" class="max-w-md mx-0 text-left"></div>
+      </div>
+    </div>
+    <!-- Desktop Pagination on the far right -->
+    <div id="custom-pagination" class="hidden md:flex absolute right-[-80px] top-1/2 -translate-y-1/2 flex-col gap-6 z-10"></div>
+
+    <!-- Mobile: All three images and content stacked -->
+    <div class="flex flex-col md:hidden w-full max-w-md mx-auto gap-10">
+      <!-- Residential Spaces -->
+      <div>
+        <img src="c1.PNG" alt="Residential Spaces" class="object-cover w-full h-64 rounded-lg mb-6" />
+        <div class="px-2">
+          <h3 class="text-3xl font-serif font-semibold text-[#232b3b] mb-4 tracking-wide" style="font-family: 'Times New Roman', serif;">Residential Spaces</h3>
+          <p class="text-gray-700 text-base leading-7 font-sans">Transform your home into creating beautiful, functional residential spaces that reflect your unique style and needs. From concept to completion, we'll turn your vision & aspiration into a reality.</p>
+        </div>
+      </div>
+      <!-- Commercial Spaces -->
+      <div>
+        <img src="sf1 copy.PNG" alt="Commercial Spaces" class="object-cover w-full h-64 rounded-lg mb-6" />
+        <div class="px-2">
+          <h3 class="text-3xl font-serif font-semibold text-[#232b3b] mb-4 tracking-wide" style="font-family: 'Times New Roman', serif;">Commercial Spaces</h3>
+          <p class="text-gray-700 text-base leading-7 font-sans">Our approach blends style and functionality, creating environments that boost productivity and leave a lasting impression. Experience the transformation of your workspace into a realm of elegance and refinement.</p>
+        </div>
+      </div>
+      <!-- Showflats -->
+      <div>
+        <img src="1r1.PNG" alt="Showflats" class="object-cover w-full h-64 rounded-lg mb-6" />
+        <div class="px-2">
+          <h3 class="text-3xl font-serif font-semibold text-[#232b3b] mb-4 tracking-wide" style="font-family: 'Times New Roman', serif;">Showflats</h3>
+          <p class="text-gray-700 text-base leading-7 font-sans">Explore the epitome of future living with our showflats for this under-construction project. Each space is thoughtfully designed, showcasing premium finishes and exquisite attention to detail. Get a preview of the elegance and sophistication that await in your new home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Swiper & Script for vertical carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const slideTexts = [
+      {
+        title: "Showflats",
+        description: `Explore the epitome of future living with our showflats for this under-construction project. Each space is thoughtfully designed, showcasing premium finishes and exquisite attention to detail. Get a preview of the elegance and sophistication that await in your new home.`
+      },
+      {
+        title: "Residential Spaces",
+        description: `Transform your home into creating beautiful, functional residential spaces that reflect your unique style and needs. From concept to completion, we'll turn your vision & aspiration into a reality.`
+      },
+      {
+        title: "Commercial Spaces",
+        description: `Our approach blends style and functionality, creating environments that boost productivity and leave a lasting impression. Experience the transformation of your workspace into a realm of elegance and refinement.`
+      }
+    ];
+    function updateContent(index) {
+      const text = slideTexts[index];
+      document.getElementById("text-content").innerHTML = `
+        <h3 class="text-5xl font-serif font-semibold text-[#232b3b] mb-6 tracking-wide" style="font-family: 'Times New Roman', serif;">${text.title}</h3>
+        <p class="text-gray-700 text-xl leading-8 font-sans">${text.description}</p>
+      `;
+    }
+    function renderPagination(activeIndex) {
+      const pagination = document.getElementById('custom-pagination');
+      pagination.innerHTML = '';
+      for (let i = 0; i < slideTexts.length; i++) {
+        const btn = document.createElement('button');
+        btn.className = `w-12 h-12 flex items-center justify-center rounded-full border transition-all duration-200 text-xl font-sans ${i === activeIndex ? 'border-2 border-black font-bold text-black' : 'border border-gray-300 text-gray-400 font-normal'} bg-white focus:outline-none`;
+        btn.innerHTML = `<span>${i + 1}</span>`;
+        btn.onclick = () => swiper.slideTo(i);
+        pagination.appendChild(btn);
+      }
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      const swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        loop: false,
+        slidesPerView: 1,
+        mousewheel: true,
+        pagination: {
+          el: "#custom-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return `<span class="${className} w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#232b3b] text-[#232b3b] text-xl font-semibold transition-all duration-200">${index + 1}</span>`;
+          },
+        },
+        on: {
+          slideChange: function () {
+            updateContent(this.realIndex);
+            renderPagination(this.realIndex);
+          },
+        },
+      });
+      updateContent(0);
+      renderPagination(0);
+      const observer = new MutationObserver(() => {
+        document.querySelectorAll('#custom-pagination .swiper-pagination-bullet').forEach(btn => {
+          if (btn.classList.contains('swiper-pagination-bullet-active')) {
+            btn.classList.add('ring-2', 'ring-[#232b3b]', 'font-bold');
+            btn.classList.remove('text-[#232b3b]');
+          } else {
+            btn.classList.remove('ring-2', 'ring-[#232b3b]', 'font-bold');
+            btn.classList.add('text-[#232b3b]');
+          }
+        });
+      });
+      observer.observe(document.getElementById('custom-pagination'), { childList: true, subtree: true });
+    });
+  </script>
+
+  <!-- Awards & Accolades Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center w-full mb-12">
+        <div class="flex-grow border-t border-gray-300"></div>
+        <span class="mx-6 text-3xl font-serif text-[#232b3b] tracking-wide">Awards & Accolades</span>
+        <div class="flex-grow border-t border-gray-300"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
+        <!-- Award 1 -->
+        <div class="flex flex-col items-center">
+          <div class="mb-4">
+            <!-- Placeholder for 40 Under Forty icon -->
+            <span class="text-[96px] font-extrabold text-[#b3a692] leading-none">40</span>
+            <div class="text-[18px] font-bold text-[#b3a692] -mt-4">UNDER FORTY</div>
+          </div>
+          <div class="text-[#b3a692] text-2xl font-bold mb-2">BEST INTERIOR DESIGNER</div>
+          <div class="text-[#b3a692] text-xl font-semibold">2022</div>
+        </div>
+        <!-- Award 2 -->
+        <div class="flex flex-col items-center">
+          <div class="mb-4">
+            <!-- Placeholder for Architect's Diary icon -->
+            <svg width="80" height="40" viewBox="0 0 80 40" fill="none"><rect x="10" y="10" width="60" height="20" rx="4" fill="#b3a692"/></svg>
+          </div>
+          <div class="text-[#b3a692] text-xl font-bold mb-2">TOP 21 RESTAURANT INTERIOR DESIGN</div>
+          <div class="text-[#b3a692] text-lg font-semibold">2021</div>
+        </div>
+        <!-- Award 3 -->
+        <div class="flex flex-col items-center">
+          <div class="mb-4">
+            <!-- Placeholder for FOAID icon -->
+            <span class="text-4xl font-extrabold text-[#b3a692]">FOAID</span>
+          </div>
+          <div class="text-[#b3a692] text-2xl font-bold mb-2">BEST INTERIOR DESIGN FOR HOSPITALITY</div>
+          <div class="text-[#b3a692] text-xl font-semibold">2022</div>
+        </div>
+        <!-- Award 4 -->
+        <div class="flex flex-col items-center">
+          <div class="mb-4">
+            <!-- Placeholder for Architecture & Interior Design icon -->
+            <svg width="60" height="40" viewBox="0 0 60 40" fill="none"><rect x="10" y="10" width="40" height="20" rx="4" fill="#b3a692"/></svg>
+          </div>
+          <div class="text-[#b3a692] text-xl font-bold mb-2">LEADING & MOST CREATIVE INTERIOR DESIGN FIRM OF THE YEAR</div>
+          <div class="text-[#b3a692] text-xl font-semibold">2022</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- We Are Social Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="flex items-center w-full mb-12">
+        <div class="flex-grow border-t border-gray-300"></div>
+        <span class="mx-6 text-xl font-serif text-[#232b3b] tracking-wide uppercase">We Are Social</span>
+        <div class="flex-grow border-t border-gray-300"></div>
+      </div>
+      <div class="flex flex-col items-center mb-8">
+        <div class="flex items-center space-x-3 mb-6">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-900">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0 1 20.5 7.75v8.5A4.25 4.25 0 0 1 16.25 20.5h-8.5A4.25 4.25 0 0 1 3.5 16.25v-8.5A4.25 4.25 0 0 1 7.75 3.5zm8.25 2.25a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5zm-5.25 1.25A5 5 0 1 0 16 10a5 5 0 0 0-5-5zm0 1.5a3.5 3.5 0 1 1-3.5 3.5A3.5 3.5 0 0 1 10.75 6.25zm0 1.5a2 2 0 1 0 2 2a2 2 0 0 0-2-2z"/></svg>
+          </span>
+          <span class="font-medium text-gray-900">ksdesigner_planner</span>
+        </div>
+        <!-- Instagram Feed Grid (placeholder images) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-y-6 md:gap-y-8 gap-x-2">
+          <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/sb-instagram-feed-images/462599206_18257101429267284_5589373256434937131_nlow.webp" class="w-full h-64 md:h-72 object-cover rounded" />
+          <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/sb-instagram-feed-images/462188295_18256691842267284_2269326275405134606_nlow.webp" class="w-full h-64 md:h-72 object-cover rounded" />
+          <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/sb-instagram-feed-images/461957382_18256342807267284_6759298601748270497_nlow.webp" class="w-full h-64 md:h-72 object-cover rounded" />
+          <img src="https://t4.ftcdn.net/jpg/04/91/57/21/360_F_491572121_bqPjoYvicbDVn87xLjan54VLGHnM5r1o.jpg" class="w-full h-64 md:h-72 object-cover rounded" />
+          <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/sb-instagram-feed-images/455133330_18249628501267284_1232834401541885207_nlow.webp"  class="w-full h-64 md:h-72 object-cover rounded"/>
+          <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/sb-instagram-feed-images/454951685_18249371818267284_5712219744732075326_nlow.webp" class="w-full h-64 md:h-72 object-cover rounded" />
+          <img src="https://komalsachdevdesignerplanner.com/wp-content/uploads/sb-instagram-feed-images/454572652_18249209221267284_5955845639623069295_nlow.webp"class="w-full h-64 md:h-72 object-cover rounded"/>
+          <img src="data:image/jpeg;base64,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" class="w-full h-64 md:h-72 object-cover rounded" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBYJgpTHgkgdeiOFFb6mCNrhbg5EFwAYvdUQ&s" class="w-full h-64 md:h-72 object-cover rounded" />
+        </div>
+      </div>
+      <div class="flex justify-center space-x-4 mt-6">
+        <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300">Load More</button>
+        <a href="https://instagram.com/ksdesigner_planner" target="_blank" class="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Follow on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-[#232323] py-10 mt-0">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start px-4">
+      <!-- Left: Logo and Copyright -->
+      <div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
+        <div class="flex items-center mb-2">
+          <!-- Logo (text-based for now) -->
+          <span class="text-white text-6xl font-light leading-none mr-4" style="font-family:serif;">ks</span>
+          <div>
+            <div class="text-white text-2xl font-semibold">KOMAL SACHDEV</div>
+            <div class="text-white text-base tracking-wider">DESIGNER + PLANNER</div>
+          </div>
+        </div>
+        <div class="text-[#d1c7b7] text-sm italic mt-4">Copyright © 2024 KSDP &amp; Developed with <span class="text-[#b3a692]">&#10084;</span> by PerceptKraft.</div>
+      </div>
+      <!-- Right: Social Links -->
+      <div class="flex flex-col items-center md:items-end">
+        <div class="text-white text-2xl font-serif mb-4">Follow Us On</div>
+        <div class="flex space-x-6">
+          <!-- Instagram -->
+          <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full border border-[#d1c7b7] text-white hover:bg-[#b3a692] transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="6"/><circle cx="12" cy="12" r="5"/><circle cx="17" cy="7" r="1.5"/></svg>
+          </a>
+          <!-- Facebook -->
+          <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full border border-[#d1c7b7] text-white hover:bg-[#b3a692] transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17 2.1A2.1 2.1 0 0 1 19.1 4.2v15.6A2.1 2.1 0 0 1 17 21.9H7A2.1 2.1 0 0 1 4.9 19.8V4.2A2.1 2.1 0 0 1 7 2.1h10zm-2.5 4.2h-1.4c-.6 0-.7.3-.7.7v1.4h2.1l-.3 2.1h-1.8v5.6h-2.1v-5.6H8.6V8.4h1.1V7.5c0-1.2.7-2.1 2.1-2.1h1.4v2.1z"/></svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full border border-[#d1c7b7] text-white hover:bg-[#b3a692] transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.3c-1 0-1.7-.8-1.7-1.7s.8-1.7 1.7-1.7 1.7.8 1.7 1.7-.8 1.7-1.7 1.7zm15.5 10.3h-3v-4.5c0-1.1-.4-1.8-1.3-1.8-.7 0-1.1.5-1.3 1-.1.2-.1.5-.1.8v4.5h-3v-9h3v1.2c.4-.6 1.1-1.5 2.7-1.5 2 0 3.5 1.3 3.5 4.1v5.2z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+</body>
+</html>
